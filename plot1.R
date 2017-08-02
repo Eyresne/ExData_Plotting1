@@ -1,3 +1,4 @@
+
 # code to load
 p <- "../DataSets/household_power_consumption.txt"
 PD <- read.table(p,sep = ";",header = T,na.strings = "?")
@@ -8,7 +9,7 @@ PD <- PD[,!names(PD)=="Date"]
 
 png(filename = "Plot1.png")
 
-## Plot 1; save these as separate files
+## Plot 1
 hist(PD$Global_active_power, 
      col = "red2"
      ,xlab = "Global Active Power (kilowatts)"

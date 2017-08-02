@@ -6,6 +6,7 @@ PD$DateTime <- strptime(paste(PD$Date,PD$Time),"%d/%m/%Y %H:%M:%S")
 PD <- PD[,!names(PD)=="Time"]
 PD <- PD[,!names(PD)=="Date"]
 
+
 png(filename = "Plot2.png")
 
 ##plot 2
@@ -14,6 +15,5 @@ plot(PD$DateTime,PD$Global_active_power,type = "l"
      ,ylab = "Global Active Power (kilowatts)"
 )
 
-  
 dev.off()
 
